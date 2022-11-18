@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  Equilibrium #3429
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <main class="component">
+      <div class="nft-image-container">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="NFT Equilibrium #3429 image"
+          class="nft-image"
+        />
+        <a href="#" class="nft-icon-view-container"></a>
+      </div>
+      <h1 class="nft-name"><a href="#">Equilibrium #3429</a></h1>
+      <p class="nft-description">Our Equilibrium collection promotes balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
+      <div class="nft-info">
+        <span class="nft-price">0.041 ETH</span>
+        <span class="nft-time">3 days left</span>
+      </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+      <div class="nft-creator">
+        <img
+          src="./images/image-avatar.png"
+          alt="NFT creator profile picture"
+          class="nft-creator-image"
+        />
+        <span class="nft-creator-name">Creation of <a href="#">Jules Wyvern</a></span>
+      </div>
+    </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/mateusbelicio">Mateus Belício</a>.
+    </footer>
+  </body>
 </html>
