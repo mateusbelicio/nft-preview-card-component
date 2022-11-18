@@ -74,37 +74,39 @@ body {
   padding: 23px;
 }
 
-.nft-image-container,
 .nft-image,
-.nft-icon-view-container {
+.nft-link-image {
   aspect-ratio: 1 / 1;
   border-radius: 6px;
   cursor: pointer;
-  width: 100%;
+  overflow: hidden;
 }
 
-.nft-image-container {
+.nft-link-image {
   align-self: center;
   position: relative;
 }
 
-.nft-icon-view-container {
-  aspect-ratio: 1 / 1;
+.nft-link-image::after {
   background-color: rgba(0, 255, 247, 0.5);
   background-image: url(../images/icon-view.svg);
   background-position: center;
   background-repeat: no-repeat;
+  content: '';
+  height: 100%;
   left: 0;
   opacity: 0;
   position: absolute;
-  right: 0;
   top: 0;
+  transform: translateY(-100%);
+  transition: transform 0.5s 0.2s ease-in, opacity 0.3s ease-in;
+  width: 100%;
 }
 
-.nft-image:hover .nft-icon-view-container,
-.nft-icon-view-container:hover {
+.nft-link-image:hover::after {
+  transform: translateY(0);
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: transform 0.3s ease-out, opacity 0.5s 0.2s ease-out;
 }
 
 .nft-name,
